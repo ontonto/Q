@@ -1,0 +1,117 @@
+body {
+	margin: 25px auto 0 auto;
+	width: 780px;
+	font-family: Georgia, Times New Roman, serif;
+	font-size: 18px;
+	line-height: 1.5em;
+}
+
+h1 {
+	padding: 0;
+	margin: 0;
+	margin-bottom: 15px;
+	font-size: 35px;
+	line-height: 37px;
+	font-weight: normal;
+	text-align: center;
+	font-family: Georgia, Times New Roman, serif;
+	letter-spacing: -0.03em;
+}
+
+h2 {
+	padding: 0;
+	margin: 0;
+	font-size: 25px;
+	line-height: 28px;
+	font-weight: normal;
+	font-family: Georgia, Times New Roman, serif;
+	letter-spacing: -0.03em;
+}
+
+h3 {
+	padding: 0;
+	margin: 0;
+	margin-top: 5px;
+	font-size: 16px;
+	line-height: 25px;
+	font-weight: normal;
+	font-family: Georgia, Times New Roman, serif;
+	letter-spacing: -0.03em;
+}
+
+h4 {
+	padding: 0;
+	margin: 0;
+	font-size: 17px;
+	font-weight: normal;
+	font-family: Georgia, Times New Roman, serif;
+	letter-spacing: -0.03em;
+}
+
+a {
+	color: #777;
+}
+
+.clear-float {
+  clear: both;
+}
+
+.navigation {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.navigation li {
+	float: left;
+	padding-left: 30px;
+	outline: none;
+}
+
+.navigation li a {
+	color: #aaa;
+	text-decoration: none;
+	outline: none;
+}
+
+.navigation li a:hover {
+	color: #333;
+}
+
+#content {
+	height: 700px;
+	overflow: hidden;
+}
+
+.vseparator {
+	margin: 20px 0px;
+	border-bottom: 1px solid #888;
+}
+
+.page {
+	height: 700px;
+}
+
+.pull-frame {
+	overflow: hidden;
+}
+
+.pull-left {
+	position: relative;
+	float: left;
+	left: 50%;
+}
+
+.pull-right {
+	position: relative;
+	float: left;
+	left: -50%;
+}
+
+.gist {
+	font-size: 13px;
+}
+
+.gist .gist-meta {
+	display: none;
+}

@@ -1,0 +1,108 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<title>Q</title>
+	<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+	<link rel="stylesheet" type="text/css" href="css/styles.css" />
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			var navLinks = $('ul.navigation li a[href^=#], a.anchor');
+			var pages = $('div#content div.page');
+			navLinks.click(function(){
+				var target = $(this.getAttribute('href'));
+				$('div#content').scrollTop(target.height() * pages.index(target));
+				return false;
+			});
+		});
+	</script>
+</head>
+<body>
+	<h1>Q</h1>
+	<div id="navigation" class="pull-frame clear-float">
+		<div class="pull-left">
+			<div class="pull-right">
+				<ul class="navigation">
+					<li><a href="#about">about</a></li>
+					<li><a href="#examples">examples</a></li>
+					<li><a href="#docs">documentation</a></li>
+					<li><a href="#faq">faq</a></li>
+					<li><a href="#download">download</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="clear-float"></div>
+	</div>
+	<div class="vseparator"></div>
+	<div id="content">
+		<div id="about" class="page">
+			<h1>About</h1>
+			<p>
+				Q is a simple stand-alone query abstraction layer.
+			</p>
+			<p>
+				It is not a database abstraction layer.
+			</p>
+			<p>
+				Q tries to eliminate redundancy of writing SQL across different database platforms.
+			</p>
+			<p>
+				Q is <a href="#examples" class="anchor">simple</a>. : )
+			</p>
+		</div>
+		<div id="examples" class="page">
+			<h1>Examples</h1>
+			<br />
+			<strong>MySQL</strong>
+			<script type="text/javascript" src="http://gist.github.com/569886.js"></script>
+			<strong>PHP - Q</strong>
+			<script type="text/javascript" src="http://gist.github.com/569893.js"></script>
+			
+			<small>These are only simple examples, a more complicated example is available and will be added shortly.</small>
+			<!--<a href="more">More</a>
+			<strong>MySQL</strong>
+			<script src="http://gist.github.com/569897.js"> </script>
+			<strong>PHP - Q Generated</strong>
+			<script src="http://gist.github.com/569899.js"> </script>-->
+		</div>
+		<div id="docs" class="page">
+			<h2>Documentation</h2>
+			<p>
+				Under progress
+			</p>
+		</div>
+		<div id="faq" class="page">
+			<h1>FAQ</h1>
+			<h2>Why call it Q?</h2>
+			<p>
+				It fits with Q::uery, which is the singleton constructor used to create a new query.
+			</p>
+			<h2>Why use Q?</h2>
+			<p>
+				If you don't want to, don't.
+			</p>
+			<p>
+				Q was created to eliminate writing SQLs over and over for each different database engine. It hopes to make things easier and more portable by providing a common interface to write SQL queries.
+			</p>
+			<h2>Why not use projects like Doctrine which already provides such a feature with a hundred more?</h2>
+			<p>
+				Short answer: Why not? Sure!
+			</p>
+			<p>
+				Long answer: Usually when developing simple applications I do not require a full-fledged ORM like Doctrine. However, I still need to make it portable and writing conditions for each database engine everytime isn't very convinient. With Q, I can easily port the queries across platforms.
+			</p>
+			<h2>What are the features of Q?</h2>
+			<p>
+				Query abstraction, that's it! (Although if you want, you can plug other things in, like a database abstraction layer but that's up to you.)
+			</p>
+		</div>
+		<div id="download" class="page">
+			<h1>Download</h1>
+			<p>
+				Get it on <a href="http://github.com/a110y/Q">github</a>!
+			</p>
+		</div>
+	</div>
+</body>
+</html>
